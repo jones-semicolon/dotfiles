@@ -113,7 +113,9 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
+alias nvimconfig="nvim ~/.config/nvim/init.lua"
+alias v="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
 prompt_context() {
