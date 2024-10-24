@@ -114,10 +114,11 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
-alias nvimconfig="nvim ~/.config/nvim/init.lua"
+alias nvimconfig="nvim ~/.config/nvim/lua/jones/plugins-setup.lua"
 alias v="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
+alias lg='lazygit'
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"

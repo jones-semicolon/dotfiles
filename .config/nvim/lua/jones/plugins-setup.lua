@@ -189,6 +189,14 @@ return packer.startup(function(use)
 	use({
 		"bbjornstad/pretty-fold.nvim",
 	})
+	use({
+		"razak17/tailwind-fold.nvim",
+		opts = {},
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
+		config = function()
+			require("tailwind-fold").setup({ ft = { "html", "twig" } })
+		end,
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
