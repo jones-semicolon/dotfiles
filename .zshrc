@@ -124,3 +124,5 @@ prompt_context() {
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
+export PATH="/data/data/com.termux/files/home/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/data/data/com.termux/files/home/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
