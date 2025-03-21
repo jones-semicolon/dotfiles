@@ -99,6 +99,12 @@ null_ls.register(null_ls.builtins.diagnostics.eslint_d.with({
     return utils.root_has_file(".eslintrc.js")
   end,
 }))
+null_ls.register(null_ls.builtins.formatting.black.with({
+  filetypes = { "python" },
+}))
+-- null_ls.register(null_ls.builtins.diagnostics.pylint.with({
+--   filetypes = { "python" },
+-- }))
 
 -- configure null-ls
 null_ls.setup({
