@@ -102,6 +102,10 @@ lspconfig["html"].setup({
 lspconfig["pylsp"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
+  filetypes = {
+    "python",
+    "kivy"
+  },
   settings = {
     pylsp = {
       plugins = {

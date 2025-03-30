@@ -4,6 +4,12 @@ if not saga_status then
   return
 end
 
+local ft = require('Comment.ft')
+
+-- 1. Using set function
+
+ft.set('kivy', '#%s')
+
 saga.setup({
   -- keybinds for navigation in lspsaga window
   scroll_preview = { scroll_down = "<C-f>", scroll_up = "<C-b>" },
