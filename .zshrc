@@ -119,6 +119,7 @@ alias v="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
 alias lg='lazygit'
+alias startbot=~/.shortcuts/StartBot.sh
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
