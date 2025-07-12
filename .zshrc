@@ -127,3 +127,4 @@ prompt_context() {
 }
 export PATH="/data/data/com.termux/files/home/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/data/data/com.termux/files/home/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+source /data/data/com.termux/files/home/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
